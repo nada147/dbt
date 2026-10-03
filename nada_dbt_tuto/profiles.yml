@@ -1,0 +1,26 @@
+dbt_immobilier:
+  outputs:
+    dev:
+      dremio_space: '@user'
+      dremio_space_folder: no_schema
+      object_storage_path: gold
+      object_storage_source: minio_silver
+      password: nada2004
+      port: 9047
+      software_host: localhost
+      threads: 1
+      type: dremio
+      use_ssl: false
+      user: nada
+  target: dev
+nada_dbt_tuto:
+  outputs:
+    dev:
+      catalog: dbt_tuturial_dev
+      host: dbc-fd228250-2244.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/5d1ba0ed116566b1
+      schema: default
+      threads: 1
+      token: dapi57f2f77761f18b00bf8d6b985f4a1570
+      type: databricks
+  target: dev
