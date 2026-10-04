@@ -21,6 +21,6 @@ nada_dbt_tuto:
       http_path: /sql/1.0/warehouses/5d1ba0ed116566b1
       schema: default
       threads: 1
-      token: dapi57f2f77761f18b00bf8d6b985f4a1570
+      token: dapied3f4734e8a924c6a6d355b2c8968326
       type: databricks
   target: dev
